@@ -1,0 +1,56 @@
+global !p
+def math():
+	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+context "math()"
+snippet to "to" mA
+\to
+endsnippet
+
+context "math()"
+snippet in "in" mA
+\in
+endsnippet
+
+context "math()"
+snippet equiv "equiv" mA
+\equiv
+endsnippet
+
+context "math()"
+snippet neg "neg" mA
+\neg
+endsnippet
+
+snippet jj "jj to \" iA
+\
+endsnippet
+
+snippet { "{}" mA
+{$1}$2
+endsnippet
+
+context "math()"
+snippet CC "mathcal" mA
+\mathcal{C}
+endsnippet
+
+context "math()"
+snippet SS "mathcal" mA
+\mathcal{S}
+endsnippet
+
+snippet ( "parantheses" mA
+$0($1)$2
+endsnippet
+
+context "math()"
+snippet gdw "gdw" mA
+\Leftrightarrow
+endsnippet
+
+context "math()"
+snippet pr "parantheses" mA
+($1)$2
+endsnippet
+
